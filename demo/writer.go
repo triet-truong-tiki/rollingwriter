@@ -32,7 +32,7 @@ func main() {
 		// - 异步 writer: 异步 write, 并发安全. 异步开启后忽略 Lock 选项
 		WriterMode: "lock",
 		// BufferWriterThershould in B
-		BufferWriterThershould: 8 * 1024 * 1024,
+		BufferWriterThreshold: 8 * 1024 * 1024,
 		// Compress will compress log file with gzip
 		Compress: true,
 	}
